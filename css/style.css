@@ -47,3 +47,26 @@ footer li {
   display: inline-block;
   padding: 0px 7px;
 }
+.flexcontainer {
+padding: 5px;
+width: 15px;
+margin: 5px; 
+}
+.item1 {
+grid-area: myArea;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea' 'myArea'
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+    width: 100%;
+
+    #categoryGrid {
+      grid-template-rows :300px 300 px 300 px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "XXXXXX" 
+    }
